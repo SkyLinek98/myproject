@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var rModel = require("../models/roomsModel");
-    
+var rModel = require("../models/roomsModel");        
 
 router.get('/', async function(req, res, next) {
     let result = await rModel.getAllRooms();
